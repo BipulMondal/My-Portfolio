@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <style>
+        hr{
+        height: 50px;
+        width: 23%;
+        margin: -51px 430px;
+        background: linear-gradient(to right, #8f92f3 0%, #ff1d8e 100%);
+        border: none;
+        border-radius: 50px;
+        transition: .5s ease-in-out;
+        }
+        .one:hover ~ hr{
+            margin-left: 0%;
+        }
+        .two:hover ~ hr
+        {
+            margin-left: 25%;
+        }
+        .three:hover ~ hr
+        {    
+           margin-left: 50%;
+        }
+        .contact{
+            display: block;
+            text-align: center;
+            color: #ffff00;
+            height: 400px;
+            width: 100%;
+        }
+        h1{
+            font-size: 50px;
+            margin-left: 80px;
+        }
+        .img{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 70px;
+        }
+        .img img{
+            margin-left: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        </style>
+
+
+    <navbar>
+        <div >
+           <a id="logo"  href="./index.html">Portfolio</a>
+        </div>
+        <div class="list_items">
+            <ul>
+                <li class="one" onclick="goto1()"><a href="#">Home</a></li>
+                <li class="two" onclick="goto2()"><a href="#">About</a></li>
+                <li class="three" onclick="goto3()"><a href="#">Work</a></li>
+                <li class="four" onclick="goto4()"><a href="#">Contact</a></li>
+                <hr/>
+            </ul>
+        </div>
+    </navbar>
+    <div class="contact">
+        <h1>I am available here <i class="fa-solid fa-arrow-right"></i></h1>
+        <div class="img">
+            <img id="img1" src="./images/instagram.png" alt="logo">
+            <img id="img2" src="./images/linkedin.png" alt="logo">
+            <img id="img3" src="./images/gmail.png" alt="logo">
+            <img id="img4" src="./images/github.png" alt="logo">
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

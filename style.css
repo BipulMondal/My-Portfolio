@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/bg-img1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*-------- Navigation bar-----------*/
+navbar{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    font-size: 20px;
+    cursor: pointer;
+}
+#logo:hover{
+    color: #fff;
+}
+.list_items{
+    height: 100px;
+    width: auto;
+    width: 45%;
+}
+ul li{
+    display: inline;
+    text-align: center;
+}
+a{
+    display: inline-block;
+    width: 24%;
+    padding: auto;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    transition-delay: 5s ease-in-out;
+    color: #ffffff;
+}
+hr{
+    height: 50px;
+    width: 23%;
+    margin: -51px 0;
+    background: linear-gradient(to right, #8f92f3 0%, #ff1d8e 100%);
+    border: none;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+}
+.two:hover ~ hr
+{
+    margin-left: 25%;
+}
+.three:hover ~ hr
+{
+    margin-left: 50%;
+}
+.four:hover ~ hr
+{
+    margin-left: 75%;
+}
+/*-------------*/
+.details{
+    height: 310px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 80px;
+}
+.text{
+    margin-top: 30px;
+    /* padding-left: 100px; */
+}
+.text h1{
+    font-size: 50px;
+    font-weight: 900;
+     color: #fff; 
+}
+.text h3{
+    font-size: 25px;
+    color: #ffff00;
+    margin: -56px 10px;
+}
+.text span{
+     font-size: 90px;
+} 
+#img{
+    height: 489px;
+    /* margin-top: 20px; */
+}
+
+/*--------------*/
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    text-align: center;
+    padding-left: 100px;
+}
+.bottom h2{
+    font-size: 20px;
+    margin-top: 7px;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: 2px solid #ffff00;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff1d8e 0%, #ffff00 50%, #8f92f3 100%);
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(to left, #ff1d8e 0%, #ffff00 50%, #8f92f3 100%);
+    box-shadow: 0 0 5px 5px #ffff00;
+}
+
+
+
+
+/*------- bg Animation -------*/
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(./images/wave.png);
+    opacity: 0.8;
+    animation: animate 10s linear infinite;
+}
+.wave::before{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background-image:url(./images/wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+.wave::after{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background-image:url(./images/wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse{
+    0%{
+        background-position: 1360px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
