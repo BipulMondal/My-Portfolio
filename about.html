@@ -10,10 +10,13 @@
 <body>
     <!-- ---small css -- -->
     <style>
+        body{
+            color: #fff;
+        }
         hr{
         height: 50px;
-        width: 23%;
-        margin: -51px 145px;
+        width: 17%;
+        margin: -51px 141px;
         background: linear-gradient(to right, #8f92f3 0%, #ff1d8e 100%);
         border: none;
         border-radius: 50px;
@@ -24,15 +27,33 @@
         }
         .two:hover ~ hr
         {
-            margin-left: 25%;
+            margin-left: 18%;
         }
         .four:hover ~ hr
-        {    
-           margin-left: 75%;
+        {
+            margin-left: 52%;
         }
+        .five:hover ~ hr {
+            margin-left: 70%;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+        span {
+            color: #ffff00;
+        }
+        #myimg {
+            height: 400px;
+            width: 200px;
+        }
+
         </style>
-    
-    
+
         <navbar>
             <div id="logo">
                 <a href="">Portfolio</a>
@@ -41,12 +62,45 @@
                 <ul>
                     <li class="one" onclick="goto1()"><a href="#">Home</a></li>
                     <li class="two" onclick="goto2()"><a href="#">About</a></li>
-                    <li class="three" onclick="goto3()"><a href="#">Work</a></li>
-                    <li class="four" onclick="goto4()"><a href="#">Contact</a></li>
+                    <li class="three" onclick="goto3()"><a href="#">Skills</a></li>
+                    <li class="four" onclick="goto4()"><a href="#">Projects</a></li>
+                    <li class="five" onclick="goto5()"><a href="#">Contact</a></li>
                     <hr/>
                 </ul>
             </div>
         </navbar>
+        <div class="container">
+            <div>
+                <img class="icon" src="./images/github.png" alt="logo">
+                <img class="icon" src="./images/instagram.png" alt="logo">
+                <img class="icon" src="./images//linkedin.png" alt="logo">
+                <img class="icon" src="./images/netlify.png" alt="logo">
+            </div>
+            <div>
+                <p>Hello! I am Bipul Mondal, a passionate software engineer. Currently <br/>
+                working and exploring more on <span>Full Stack Web Development</span> in which<br/>
+                I am more focused toward the <span>Backend Part.</span> <br>
+                My code skills are mostly based on <span>Javascript,</span> which is the love of <br>
+                my programming life. <br>
+                I am also looking forward to collaborate with the minded people on projects to <br>
+                build some real-world problem solving tools. Also trying to contribute more in <br>
+                open source to serve the community by my knowledge and experience. <br><br>
+
+                I am also open to work for any <span>Freelancing Projects</span> based on my skill set.
+                </p>
+
+                <div>
+                    <button class="btn" onclick="goto5()">Hire Me</button>
+                    <button class="btn" onclick="goto3()">Skills</button>
+                </div>
+            </div>
+            <div>
+                <img id="myimg"  src="./images/my image.png" alt="logo">
+            </div>
+        </div>
+
+
+
         <script src="./script.js"></script>
 </body>
-</html>
+</html> 
