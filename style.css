@@ -1,9 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(./images/bg-img1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #000;
 }
 /*-------- Navigation bar-----------*/
 navbar{
@@ -18,10 +16,14 @@ navbar{
 #logo:hover{
     color: #fff;
 }
+.container {
+    display: flex;
+}
 .list_items{
     height: 100px;
     width: auto;
-    width: 45%;
+    width: 60%;
+    /* background-color: #ff1d8e; */
 }
 ul li{
     display: inline;
@@ -29,21 +31,21 @@ ul li{
 }
 a{
     display: inline-block;
-    width: 24%;
+    width: 17%;
     padding: auto;
     margin: 15px 0;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 a:hover{
     transition-delay: 5s ease-in-out;
-    color: #ffffff;
+    color: #fbff03;
 }
 hr{
     height: 50px;
-    width: 23%;
+    width: 17%;
     margin: -51px 0;
     background: linear-gradient(to right, #8f92f3 0%, #ff1d8e 100%);
     border: none;
@@ -52,15 +54,18 @@ hr{
 }
 .two:hover ~ hr
 {
-    margin-left: 25%;
+    margin-left: 18%;
 }
 .three:hover ~ hr
 {
-    margin-left: 50%;
+    margin-left: 34%;
 }
 .four:hover ~ hr
 {
-    margin-left: 75%;
+    margin-left: 52%;
+}
+.five:hover ~ hr {
+    margin-left: 70%;
 }
 /*-------------*/
 .details{
@@ -70,14 +75,10 @@ hr{
     justify-content: space-around;
     line-height: 80px;
 }
-.text{
-    margin-top: 30px;
-    /* padding-left: 100px; */
-}
 .text h1{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 900;
-     color: #fff; 
+    color: #fff; 
 }
 .text h3{
     font-size: 25px;
@@ -91,6 +92,15 @@ hr{
     height: 489px;
     /* margin-top: 20px; */
 }
+.icons {
+    margin-top: 45px;
+}
+.icon {
+    display: flex;
+    padding: 10px 90px;
+    margin-top: 20px;
+    height: 25px;
+}
 
 /*--------------*/
 .bottom{
@@ -98,7 +108,7 @@ hr{
     flex-direction: row;
     justify-content:flex-start;
     text-align: center;
-    padding-left: 100px;
+    /* padding-left: 100px; */
 }
 .bottom h2{
     font-size: 20px;
@@ -118,7 +128,13 @@ hr{
 .btn:hover{
     background: linear-gradient(to left, #ff1d8e 0%, #ffff00 50%, #8f92f3 100%);
     box-shadow: 0 0 5px 5px #ffff00;
+    transform: scale(1.2);
+    transition-duration: 0.2s;
 }
+.btn_3 {
+    margin-top: -15px;
+}
+
 
 
 

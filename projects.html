@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- ---small css -- -->
+    <style>
+    hr{
+    height: 50px;
+    width: 17%;
+    margin: -51px 408px;
+    background: linear-gradient(to right, #8f92f3 0%, #ff1d8e 100%);
+    border: none;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+    }
+    .one:hover ~ hr {
+        margin-left: 0%;
+    }
+    .two:hover ~ hr
+    {
+        margin-left: 18%;
+    }
+    .three:hover ~ hr
+    {
+        margin-left: 34%;
+    }
+    .four:hover ~ hr
+    {
+        margin-left: 52%;
+    }
+    </style>
+
+
+    <navbar>
+        <div id="logo">
+            <a href="">Portfolio</a>
+        </div>
+        <div class="list_items">
+            <ul>
+                <li class="one" onclick="goto1()"><a href="#">Home</a></li>
+                <li class="two" onclick="goto2()"><a href="#">About</a></li>
+                <li class="three" onclick="goto3()"><a href="#">Skills</a></li>
+                <li class="four" onclick="goto4()"><a href="#">Projects</a></li>
+                <li class="five" onclick="goto5()"><a href="#">Contact</a></li>
+                <hr/>
+            </ul>
+        </div>
+    </navbar>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+//all list item page changing 
 function goto1() {
     window.location.href="./index.html";
 }
@@ -5,20 +6,30 @@ function goto2() {
     window.location.href = "./about.html";
 }
 function goto3() {
-    window.location.href="./work.html";
+    window.location.href="./skills.html";
 }
 function goto4() {
+    window.location.href="./projects.html";
+}
+function goto5() {
     window.location.href="./contact.html";
 }
 
-document.querySelector(".btn_1").addEventListener("click", work)
-    function work(){
-        window.location.href="./work.html";
+//homepage button function
+document.querySelector(".btn_1").addEventListener("click", projects)
+    function projects(){
+        window.location.href="./projects.html";
     }
-document.querySelector(".btn_2").addEventListener("click", hire)
-    function hire(){
+document.querySelector(".btn_2").addEventListener("click", contact)
+    function contact(){
         window.location.href="./contact.html";
     }
+
+document.querySelector("btn_3").addEventListener("click", download)
+    function download(){
+            
+        }
+
 document.querySelector("#img1").addEventListener("click", linkedin)
     function linkedin(){
 
