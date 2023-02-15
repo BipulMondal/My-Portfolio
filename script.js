@@ -24,25 +24,8 @@ document.querySelector(".btn_2").addEventListener("click", contact)
     function contact(){
         window.location.href="./contact.html";
     }
-
-document.querySelector("btn_3").addEventListener("click", download)
-    function download(){
-            
-        }
-
-document.querySelector("#img1").addEventListener("click", linkedin)
-    function linkedin(){
-
-    }
-document.querySelector("#img2").addEventListener("click", instagram)
-    function instagram(){
-        
-    }
-document.querySelector("#img3").addEventListener("click", gmail)
-    function gmail(){
-        
-    }
-document.querySelector("#img4").addEventListener("click", github)
-    function github(){
-        
-    }
+//social media link function
+function gotolink(link) {
+    console.log(link.value);
+    window.open(link.value);
+}
