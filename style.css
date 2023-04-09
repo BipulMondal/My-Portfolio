@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #000;
+    font-family: 'Ubuntu', sans-serif;
 }
 /*-------- Navigation bar-----------*/
 navbar{
@@ -12,6 +13,7 @@ navbar{
 #logo{
     font-size: 20px;
     cursor: pointer;
+    color: #fbff03;
 }
 #logo:hover{
     color: #fff;
@@ -23,7 +25,6 @@ navbar{
     height: 100px;
     width: auto;
     width: 60%;
-    /* background-color: #ff1d8e; */
 }
 ul li{
     display: inline;
@@ -51,6 +52,9 @@ hr{
     border: none;
     border-radius: 50px;
     transition: .5s ease-in-out;
+}
+.one:hover ~ hr{
+    margin-left: 0%;
 }
 .two:hover ~ hr
 {
@@ -90,16 +94,26 @@ hr{
 } 
 #img{
     height: 489px;
-    /* margin-top: 20px; */
+    width: 200px;
 }
 .icons {
     margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.icons button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
 }
 .icon {
     display: flex;
     padding: 10px 90px;
     margin-top: 20px;
     height: 25px;
+}
+.icon:hover {
+    transform: scale(1.5);
 }
 
 /*--------------*/
@@ -122,11 +136,11 @@ hr{
     border: 2px solid #ffff00;
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(to right, #ff1d8e 0%, #ffff00 50%, #8f92f3 100%);
+    background: linear-gradient(to right, #ff66b3, #ffff00 );
     cursor: pointer;
 }
 .btn:hover{
-    background: linear-gradient(to left, #ff1d8e 0%, #ffff00 50%, #8f92f3 100%);
+    background: linear-gradient(to left, #ff66b3 0%, #ffff00 50%, #8f92f3 100%);
     box-shadow: 0 0 5px 5px #ffff00;
     transform: scale(1.2);
     transition-duration: 0.2s;

@@ -24,8 +24,23 @@ document.querySelector(".btn_2").addEventListener("click", contact)
     function contact(){
         window.location.href="./contact.html";
     }
+document.getElementById("logo").style.color = "green"
+    
 //social media link function
 function gotolink(link) {
     console.log(link.value);
     window.open(link.value);
 }
+//mail sending 
+function sendMail(params) {
+    var tempParams = {
+        from_name: document.getElementById("email").value,
+        to_name: document.getElementById("name").value,
+        message: document.getElementById("msg").value
+    };
+    emailjs.send("service_3v7kovt", "template_judaoic", tempParams)
+    .then(function(resp){
+        console.log("success", resp.status);
+    })
+}
+

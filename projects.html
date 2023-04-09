@@ -10,36 +10,95 @@
 <body>
     <!-- ---small css -- -->
     <style>
+    body {
+        color: #fff
+    }
     hr{
-    height: 50px;
-    width: 17%;
     margin: -51px 408px;
-    background: linear-gradient(to right, #8f92f3 0%, #ff1d8e 100%);
-    border: none;
-    border-radius: 50px;
-    transition: .5s ease-in-out;
     }
-    .one:hover ~ hr {
-        margin-left: 0%;
+    h1{
+        font-size: 55px;
+        margin: 0;
     }
-    .two:hover ~ hr
-    {
-        margin-left: 18%;
+    .projects {
+        width: 100%;
+        text-align: center;
     }
-    .three:hover ~ hr
-    {
-        margin-left: 34%;
+    .projects > h3 {
+        margin-top: 0;
     }
-    .four:hover ~ hr
-    {
-        margin-left: 52%;
+    h3 > a {
+        color: #f700ff;
+        margin-left: -28px;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+    .card {
+        height: 70px;
+        width: 150px;
+        border: 3px solid #f700ff;
+        border-radius: 10px;
+        border-right-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        transition: linear;
+    }
+    .card:hover {
+        background-color: #3e3b3b;
+        color: #ffff00;
+        box-shadow: 0 0 5px 5px #ffff00;
+        transition-duration: 0.2s;
+        transform: scale(1.1);
+    }
+    .card h3 {
+        margin: 0;
+    }
+    h4{
+        margin: 0;
+        color: #e100ff;
+        font-weight: bold;
+    }
+    h2{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .todo {
+        display: flex;
+    }
+    #todoimg {
+        height: 30rem;
+        width: 45rem;
+    }
+    .todo p {
+        font-weight: bold;
+        margin-left: 3rem;
+        margin-top: 15rem;
+    }
+    .ecom {
+        display: flex;
+        margin-top: 5rem;
+    }
+    #ecomimg {
+        height: 30rem;
+        width: 45rem;
+        margin-left: 2rem;
+    }
+    .ecom p {
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: 8rem;
     }
     </style>
 
 
     <navbar>
-        <div id="logo">
-            <a href="">Portfolio</a>
+        <div>
+            <a id="logo" href="./index.html">Portfolio</a>
         </div>
         <div class="list_items">
             <ul>
@@ -52,6 +111,84 @@
             </ul>
         </div>
     </navbar>
+
+    <div class="container">
+        <div class="icons">
+            <img class="icon" src="./images/github.png" alt="logo">
+            <img class="icon" src="./images/instagram.png" alt="logo">
+            <img class="icon" src="./images/linkedin.png" alt="logo">
+            <img class="icon" src="./images/netlify.png" alt="logo">
+        </div>
+        <div class="projects">
+            <h1>Projects Statistics</h1>
+            <h3>Projects Statistics data can be verified by visiting<a href="#">Github Profile</a> </h3>
+            <div class="cards">
+                <div class="card">
+                    <h3>HTML + CSS</h3>
+                    <h4>15+</h4>
+                </div>
+                <div class="card">
+                    <h3>Tailwind Css</h3>
+                    <h4>5+</h4>
+                </div>
+                <div class="card">
+                    <h3>Javascript</h3>
+                    <h4>16+</h4>
+                </div>
+                <div class="card">
+                    <h3>React Js</h3>
+                    <h4>5+</h4>
+                </div>
+                <div class="card">
+                    <h3>CRUD</h3>
+                    <h4>2</h4>
+                </div>
+                <div class="card">
+                    <h3>MERN</h3>
+                    <h4>1</h4>
+                </div>
+            </div>
+            <h2>Some Projects Overview</h2>
+        </div>
+
+    </div>
+    <div class="main">
+       <div class="todo">
+            <div>
+                <img id="todoimg" src="./images/screenshot/todo/home.png" alt="logo">
+            </div>
+            <div>
+              <p>This is a CRUD App. <br> The user can create title and task, read <br> 
+                update and also delete. This four functionality perform through <br>
+                database. <br> <br> <br>
+
+                Technology i used to doing this- <br> <br>
+                    1. for Frontend i used React Js <br> <br>
+                    2. for Backend i used Node Js, Express Js <br> <br>
+                    3. for Database i used Mongo DB  <br> <br>
+            </p>
+            </div>
+        </div>
+       <div class="ecom">
+           <div>
+               <p>This is a Online E-commerce App. <br> The user can view products <br>
+                   in this project i include authentication and authorization <br>
+                   for those user who want to show cart page or order page <br> without authectication. user can add product to the cart page , after <br>
+                   add products they can place order. user can directly order product <br>
+                   from and pages. user can delete products from cart and also can <br>
+                   delete order. <br> <br><br>
+   
+                   Technology i used to doing this- <br> <br>
+                       1. for Frontend i used React Js <br> <br>
+                       2. for Backend i used Node Js, Express Js <br> <br>
+                       3. for Database i used Mongo DB  <br> <br>
+               </p>
+           </div>
+            <div>
+                <img id="ecomimg" src="./images/screenshot/ecom/ecom-homepage.png" alt="logo">
+            </div>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>

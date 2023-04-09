@@ -14,28 +14,9 @@
             color: #ffffff;
         }
         hr{
-        height: 50px;
-        width: 17%;
         margin: -51px 270px;
-        background: linear-gradient(to right, #8f92f3 0%, #ff1d8e 100%);
-        border: none;
-        border-radius: 50px;
-        transition: .5s ease-in-out;
         }
-        .one:hover ~ hr {
-            margin-left: 0%;
-        }
-        .two:hover ~ hr
-        {
-            margin-left: 18%;
-        }
-        .four:hover ~ hr
-        {
-            margin-left: 52%;
-        }
-        .five:hover ~ hr {
-            margin-left: 70%;
-        }
+       
         .icons {
             width: 30%;
         }
@@ -50,6 +31,7 @@
         }
         .logo {
             height: 50px;
+           
         }
         .logos {
             height: 125px;
@@ -60,6 +42,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             transition: 0.5s linear;
         }
         .logos:hover {
@@ -74,8 +57,8 @@
         </style>
 
         <navbar>
-            <div id="logo">
-                <a href="">Portfolio</a>
+            <div >
+                <a id="logo" href="./index.html">Portfolio</a>
             </div>
             <div class="list_items">
                 <ul>
@@ -90,10 +73,18 @@
         </navbar>
         <div class="container">
             <div class="icons">
-                <img class="icon" src="./images/github.png" alt="logo">
-                <img class="icon" src="./images/instagram.png" alt="logo">
-                <img class="icon" src="./images/linkedin.png" alt="logo">
-                <img class="icon" src="./images/netlify.png" alt="logo">
+                <button onclick="gotolink(this)" value="https://github.com/BipulMondal">
+                    <img class="icon"  src="./images/github.png" alt="logo">
+                </button>
+                <button onclick="gotolink(this)" value="https://www.instagram.com/bipulmondal3007/">
+                    <img class="icon" src="./images/instagram.png" alt="logo">
+                </button>
+                <button onclick="gotolink(this)" value="https://www.linkedin.com/in/bipul-mondal-883503246/">
+                    <img class="icon" src="./images/linkedin.png" alt="logo">
+                </button>
+                <button onclick="gotolink(this)"  value="https://app.netlify.com/teams/bipulmondal/overview">
+                    <img class="icon" src="./images/netlify.png" alt="logo">
+                </button>
             </div>
             <div class="main">
                 <div class="skills">
@@ -107,33 +98,33 @@
                     </div>
                     <div class="logos">
                         <img class="logo" src="./images/skills/tailwind.png" alt="logo">
-                        <h5>CSS</h5>
+                        <h5>TAILWIND</h5>
                     </div>
                     <div class="logos">
                         <img class="logo" src="./images/skills/bootstrap.png" alt="logo">
-                        <h5>CSS</h5>
+                        <h5>BOOTSTRAP</h5>
                     </div>
                     <div class="logos">
                         <img class="logo" src="./images/skills/javascript.jpg" alt="logo">
-                        <h5>CSS</h5>
+                        <h5>JS</h5>
                     </div>
                 </div>
                 <div class="skills">
                     <div class="logos">
                         <img class="logo" src="./images/skills/React.png" alt="logo">
-                        <h5>CSS</h5>
+                        <h5>REACT</h5>
                     </div>
                     <div class="logos">
                         <img class="logo" src="./images/skills/node.png" alt="logo">
-                        <h5>CSS</h5>
+                        <h5>NODE</h5>
                     </div>
                     <div class="logos">
                         <img class="logo" src="./images/skills/express.png" alt="logo">
-                        <h5>CSS</h5>
+                        <h5>EXPRESS</h5>
                     </div>
                     <div class="logos">
                         <img class="logo" src="./images/skills/mongo db.png" alt="logo">
-                        <h5>CSS</h5>
+                        <h5>MONGODB</h5>
                     </div>
                     <div class="logos">
                         <img class="logo" src="./images/skills/Git.png" alt="logo">
