@@ -1,141 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <title>Portfolio</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("r202zZj4afBGjM2HX");
-        })();
+      (function () {
+        emailjs.init("r202zZj4afBGjM2HX");
+      })();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <style>
-        body {
-            color: #fff;
-        }
+      body {
+        color: #fff;
+      }
+      .container {
+        padding-bottom: 5rem;
+      }
 
-        hr {
-            margin: -51px 547px;
-        }
+      hr {
+        margin: -51px 547px;
+      }
 
-        h1 {
-            font-size: 35px;
-        }
+      h1 {
+        font-size: 35px;
+      }
 
-        #form {
-            height: 520px;
-            width: 350px;
-            border: 2px solid #ffff00;
-            /* box-shadow: 10px 10px 0px 0px #ffff00; */
-            box-shadow: 0px 10px 5px 5px #ffff00;
-            border-radius: 20px;
-        }
+      #form {
+        height: 520px;
+        width: 350px;
+        border: 2px solid #ffff00;
+        /* box-shadow: 10px 10px 0px 0px #ffff00; */
+        box-shadow: 0px 10px 5px 5px #ffff00;
+        border-radius: 20px;
+      }
 
-        #contact-form {
-            text-align: center;
-        }
+      #contact-form {
+        text-align: center;
+      }
 
-        #form-submit {
-            padding-left: 10px;
-        }
+      #form-submit {
+        padding-left: 10px;
+      }
 
-        label {
-            font-size: 20px;
-            font-weight: bold;
-        }
+      label {
+        font-size: 20px;
+        font-weight: bold;
+      }
 
-        input {
-            background: transparent;
-            border: none;
-            border-bottom: 2px solid #ffff00;
-            color: #fff;
-        }
+      input {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #ffff00;
+        color: #fff;
+      }
 
-        .contact {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
+      .contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
 
-        #msg {
-            background: transparent;
-            resize: none;
-            border: none;
-            border-bottom: 2px solid #ffff00;
-            color: #fff;
-            font-size: 15px;
-        }
+      #msg {
+        background: transparent;
+        resize: none;
+        border: none;
+        border-bottom: 2px solid #ffff00;
+        color: #fff;
+        font-size: 15px;
+      }
 
-        #submit {
-            width: 300px;
-            height: 50px;
-            border-radius: 12px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #ffff00;
-        }
+      #submit {
+        width: 300px;
+        height: 50px;
+        border-radius: 12px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #ffff00;
+      }
     </style>
 
     <navbar>
-        <div>
-            <a id="logo" href="./index.html">Portfolio</a>
-        </div>
-        <div class="list_items">
-            <ul>
-                <li class="one" onclick="goto1()"><a href="#">Home</a></li>
-                <li class="two" onclick="goto2()"><a href="#">About</a></li>
-                <li class="three" onclick="goto3()"><a href="#">Skills</a></li>
-                <li class="four" onclick="goto4()"><a href="#">Projects</a></li>
-                <li class="five" onclick="goto5()"><a href="#">Contact</a></li>
-                <hr />
-            </ul>
-        </div>
+      <div>
+        <a id="logo" href="./index.html">Portfolio</a>
+      </div>
+      <div class="list_items">
+        <ul>
+          <li class="one" onclick="goto1()"><a href="#">Home</a></li>
+          <li class="two" onclick="goto2()"><a href="#">About</a></li>
+          <li class="three" onclick="goto3()"><a href="#">Skills</a></li>
+          <li class="four" onclick="goto4()"><a href="#">Projects</a></li>
+          <li class="five" onclick="goto5()"><a href="#">Contact</a></li>
+          <hr />
+        </ul>
+      </div>
     </navbar>
     <div class="container">
-        <div class="icons">
-            <button onclick="gotolink(this)" value="https://github.com/BipulMondal">
-                <img class="icon" src="./images/github.png" alt="logo" />
-            </button>
-            <button onclick="gotolink(this)" value="https://www.instagram.com/bipulmondal3007/">
-                <img class="icon" src="./images/instagram.png" alt="logo" />
-            </button>
-            <button onclick="gotolink(this)" value="https://www.linkedin.com/in/bipul-mondal-883503246/">
-                <img class="icon" src="./images/linkedin.png" alt="logo" />
-            </button>
-            <button onclick="gotolink(this)" value="https://app.netlify.com/teams/bipulmondal/overview">
-                <img class="icon" src="./images/netlify.png" alt="logo" />
-            </button>
+      <div class="icons">
+        <button onclick="gotolink(this)" value="https://github.com/BipulMondal">
+          <img class="icon" src="./images/github.png" alt="logo" />
+        </button>
+        <button
+          onclick="gotolink(this)"
+          value="https://www.instagram.com/bipulmondal3007/"
+        >
+          <img class="icon" src="./images/instagram.png" alt="logo" />
+        </button>
+        <button
+          onclick="gotolink(this)"
+          value="https://www.linkedin.com/in/bipul-mondal-883503246/"
+        >
+          <img class="icon" src="./images/linkedin.png" alt="logo" />
+        </button>
+        <button
+          onclick="gotolink(this)"
+          value="https://app.netlify.com/teams/bipulmondal/overview"
+        >
+          <img class="icon" src="./images/netlify.png" alt="logo" />
+        </button>
+      </div>
+      <div class="contact">
+        <div id="form">
+          <div id="contact-form">
+            <h1>Contact Form</h1>
+          </div>
+          <div id="form-submit">
+            <label for="name">Name</label><br /><br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your name"
+              size="39"
+              style="height: 35px"
+              autocomplete="off"
+            /><br /><br />
+            <label for="email">Email</label><br /><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your email"
+              size="39"
+              style="height: 35px"
+              autocomplete="off"
+            /><br /><br />
+            <label for="message">Message</label><br /><br />
+            <textarea
+              name="message"
+              id="msg"
+              cols="35"
+              rows="6"
+              placeholder="Enter Your message"
+            ></textarea>
+            <button id="submit" onclick="sendMail()">Submit</button>
+          </div>
         </div>
-        <div class="contact">
-            <div id="form">
-                <div id="contact-form">
-                    <h1>Contact Form</h1>
-                </div>
-                <div id="form-submit">
-                    <label for="name">Name</label><br /><br />
-                    <input type="text" name="name" id="name" placeholder="Enter Your name" size="39"
-                        style="height: 35px" autocomplete="off" /><br /><br />
-                    <label for="email">Email</label><br /><br />
-                    <input type="email" name="email" id="email" placeholder="Enter Your email" size="39"
-                        style="height: 35px" autocomplete="off" /><br /><br />
-                    <label for="message">Message</label><br /><br />
-                    <textarea name="message" id="msg" cols="35" rows="6"
-                        placeholder="Enter Your message"></textarea>
-                    <button id="submit" onclick="sendMail()">Submit</button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

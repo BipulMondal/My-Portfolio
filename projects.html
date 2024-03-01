@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- ---small css -- -->
     <style>
-    body {
-        color: #fff
-    }
-    hr{
-    margin: -51px 408px;
-    }
-    h1{
+      body {
+        color: #fff;
+      }
+      hr {
+        margin: -51px 408px;
+      }
+      h1 {
         font-size: 55px;
         margin: 0;
-    }
-    .projects {
+      }
+      .projects {
         width: 100%;
         text-align: center;
-    }
-    .projects > h3 {
+      }
+      .projects > h3 {
         margin-top: 0;
-    }
-    h3 > a {
+      }
+      h3 > a {
         color: #f700ff;
         margin-left: -28px;
-    }
-    .cards {
+      }
+      .cards {
         display: flex;
         justify-content: space-evenly;
         margin-top: 60px;
-    }
-    .card {
+      }
+      .card {
         height: 70px;
         width: 150px;
         border: 3px solid #f700ff;
@@ -47,189 +47,266 @@
         justify-content: center;
         cursor: pointer;
         transition: linear;
-    }
-    .card:hover {
+      }
+      .card:hover {
         background-color: #3e3b3b;
         color: #ffff00;
         box-shadow: 0 0 5px 5px #ffff00;
         transition-duration: 0.2s;
         transform: scale(1.1);
-    }
-    .card h3 {
+      }
+      .card h3 {
         margin: 0;
-    }
-    h4{
+      }
+      h4 {
         margin: 0;
         color: #e100ff;
         font-weight: bold;
-    }
-    h2{
+      }
+      h2 {
         margin-top: 40px;
         font-size: 30px;
-    }
-    .main {
-        padding: 0 3rem;
+      }
+      .main {
+        padding: 5rem 3rem;
         text-align: center;
-    }
-    .main span {
+      }
+      .main span {
         color: #ffff00;
         font-size: 4rem;
-    }
-    .todo {
+      }
+      .todo {
         display: flex;
-        
-    }
-    #todoimg {
+      }
+      #todoimg {
         height: 30rem;
         width: 45rem;
-    }
-    .todo p {
+      }
+      .todo p {
         font-weight: bold;
         margin-left: 3rem;
         margin-top: 15rem;
-    }
-    .ecom {
+      }
+      .ecom {
         display: flex;
         margin-top: 5rem;
-    }
-    #ecomimg {
+      }
+      #ecomimg {
         height: 30rem;
         width: 45rem;
         margin-left: 2rem;
-    }
-    .ecom p {
+      }
+      .ecom p {
         font-weight: bold;
         margin-left: 1rem;
         margin-top: 8rem;
-    }
-    .message {
+      }
+      .message {
         display: flex;
         margin-top: 5rem;
-    }
-    #message {
+      }
+      #message {
         height: 30rem;
         width: 45rem;
-    }
-    .message p {
+      }
+      .message p {
         font-weight: bold;
         margin-left: 3rem;
         margin-top: 10rem;
-    }
+      }
     </style>
 
-
     <navbar>
-        <div>
-            <a id="logo" href="./index.html">Portfolio</a>
-        </div>
-        <div class="list_items">
-            <ul>
-                <li class="one" onclick="goto1()"><a href="#">Home</a></li>
-                <li class="two" onclick="goto2()"><a href="#">About</a></li>
-                <li class="three" onclick="goto3()"><a href="#">Skills</a></li>
-                <li class="four" onclick="goto4()"><a href="#">Projects</a></li>
-                <li class="five" onclick="goto5()"><a href="#">Contact</a></li>
-                <hr/>
-            </ul>
-        </div>
+      <div>
+        <a id="logo" href="./index.html">Portfolio</a>
+      </div>
+      <div class="list_items">
+        <ul>
+          <li class="one" onclick="goto1()"><a href="#">Home</a></li>
+          <li class="two" onclick="goto2()"><a href="#">About</a></li>
+          <li class="three" onclick="goto3()"><a href="#">Skills</a></li>
+          <li class="four" onclick="goto4()"><a href="#">Projects</a></li>
+          <li class="five" onclick="goto5()"><a href="#">Contact</a></li>
+          <hr />
+        </ul>
+      </div>
     </navbar>
 
     <div class="container">
-        <div class="icons">
-            <img class="icon" src="./images/github.png" alt="logo">
-            <img class="icon" src="./images/instagram.png" alt="logo">
-            <img class="icon" src="./images/linkedin.png" alt="logo">
-            <img class="icon" src="./images/netlify.png" alt="logo">
+      <div class="icons">
+        <img class="icon" src="./images/github.png" alt="logo" />
+        <img class="icon" src="./images/instagram.png" alt="logo" />
+        <img class="icon" src="./images/linkedin.png" alt="logo" />
+        <img class="icon" src="./images/netlify.png" alt="logo" />
+      </div>
+      <div class="projects">
+        <h1>Projects Statistics</h1>
+        <h3>
+          Projects Statistics data can be verified by visiting<a href="#"
+            >Github Profile</a
+          >
+        </h3>
+        <div class="cards">
+          <div class="card">
+            <h3>HTML + CSS</h3>
+            <h4>15+</h4>
+          </div>
+          <div class="card">
+            <h3>Tailwind Css</h3>
+            <h4>5+</h4>
+          </div>
+          <div class="card">
+            <h3>Javascript</h3>
+            <h4>16+</h4>
+          </div>
+          <div class="card">
+            <h3>React Js</h3>
+            <h4>10+</h4>
+          </div>
+          <div class="card">
+            <h3>CRUD</h3>
+            <h4>20+</h4>
+          </div>
+          <div class="card">
+            <h3>MERN</h3>
+            <h4>1</h4>
+          </div>
         </div>
-        <div class="projects">
-            <h1>Projects Statistics</h1>
-            <h3>Projects Statistics data can be verified by visiting<a href="#">Github Profile</a> </h3>
-            <div class="cards">
-                <div class="card">
-                    <h3>HTML + CSS</h3>
-                    <h4>15+</h4>
-                </div>
-                <div class="card">
-                    <h3>Tailwind Css</h3>
-                    <h4>5+</h4>
-                </div>
-                <div class="card">
-                    <h3>Javascript</h3>
-                    <h4>16+</h4>
-                </div>
-                <div class="card">
-                    <h3>React Js</h3>
-                    <h4>5+</h4>
-                </div>
-                <div class="card">
-                    <h3>CRUD</h3>
-                    <h4>2</h4>
-                </div>
-                <div class="card">
-                    <h3>MERN</h3>
-                    <h4>1</h4>
-                </div>
-            </div>
-            <h2>Some Projects Overview</h2>
-        </div>
-
+        <h2>Some Projects Overview</h2>
+      </div>
     </div>
     <div class="main">
-       <div class="todo">
-            <div>
-                <img id="todoimg" src="./images/screenshot/todo/home.png" alt="logo">
-            </div>
-            <div>
-              <p>This is a CRUD App. <br> The user can create title and task, read <br> 
-                update and also delete. This four functionality perform through <br>
-                database. <br> <br> <br>
+      <div class="todo">
+        <div>
+          <img
+            id="todoimg"
+            src="./images/screenshot/todo/home.png"
+            alt="logo"
+          />
+        </div>
+        <div>
+          <p>
+            This is a CRUD App. <br />
+            The user can create title and task, read <br />
+            update and also delete. This four functionality perform through
+            <br />
+            database. <br />
+            <br />
+            <br />
 
-                Technology i used to build this- <br> <br>
-                    1. for Frontend i used React Js <br> <br>
-                    2. for Backend i used Node Js, Express Js <br> <br>
-                    3. for Database i used Mongo DB  <br> <br>
-            </p>
-            </div>
+            Technology i used to build this- <br />
+            <br />
+            1. for Frontend i used React Js <br />
+            <br />
+            2. for Backend i used Node Js, Express Js <br />
+            <br />
+            3. for Database i used Mongo DB <br />
+            <br />
+          </p>
         </div>
-        <h2>2. <span>e</span>kart website</h2>
-       <div class="ecom">
-           <div>
-               <p>This is a Online E-commerce App. <br> The user can view products <br>
-                   in this project i include authentication and authorization <br>
-                   for those user who want to show cart page or order page <br> without authectication. user can add product to the cart page , after <br>
-                   add products they can place order. user can directly order product <br>
-                   from and pages. user can delete products from cart and also can <br>
-                   delete order. <br> <br><br>
-   
-                   Technology i used to build this- <br> <br>
-                       1. for Frontend i used React Js <br> <br>
-                       2. for Backend i used Node Js, Express Js <br> <br>
-                       3. for Database i used Mongo DB  <br> <br>
-               </p>
-           </div>
-            <div>
-                <img id="ecomimg" src="./images/screenshot/ecom/ecom-homepage.png" alt="logo">
-            </div>
-        </div>
-        <h2>3. <span>i</span>Chat App</h2>
-        <div class="message">
-            <div>
-                <img id="message" src="./images/screenshot/message/message.PNG" alt="logo">
-            </div>
-            <div>
-                <p>
-                    This is a messaging app. <br> anybody can join this group chat <br>
-                    using same room id. everybody can <br> send message to everyone <br>
-                    Also everybody can send Emojis. <br><br><br>
+      </div>
+      <h2>2. <span>e</span>kart website</h2>
+      <div class="ecom">
+        <div>
+          <p>
+            This is a Online E-commerce App. <br />
+            The user can view products <br />
+            in this project i include authentication and authorization <br />
+            for those user who want to show cart page or order page <br />
+            without authectication. user can add product to the cart page ,
+            after <br />
+            add products they can place order. user can directly order product
+            <br />
+            from and pages. user can delete products from cart and also can
+            <br />
+            delete order. <br />
+            <br /><br />
 
-                    Technology I used to build this messaging app - <br><br>
-                    1. for Frontend i used React Js <br><br>
-                    2. for creating a server i used socket.io
-                </p>
-            </div>
+            Technology i used to build this- <br />
+            <br />
+            1. for Frontend i used React Js <br />
+            <br />
+            2. for Backend i used Node Js, Express Js <br />
+            <br />
+            3. for Database i used Mongo DB <br />
+            <br />
+          </p>
         </div>
+        <div>
+          <img
+            id="ecomimg"
+            src="./images/screenshot/ecom/ecom-homepage.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <h2>3. <span>i</span>Chat App</h2>
+      <div class="message">
+        <div>
+          <img
+            id="message"
+            src="./images/screenshot/message/message.PNG"
+            alt="logo"
+          />
+        </div>
+        <div>
+          <p>
+            This is a messaging app. <br />
+            anybody can join this group chat <br />
+            using same room id. everybody can <br />
+            send message to everyone <br />
+            Also everybody can send Emojis. <br /><br /><br />
+
+            Technology I used to build this messaging app - <br /><br />
+            1. for Frontend i used React Js <br /><br />
+            2. for creating a server i used socket.io
+          </p>
+        </div>
+      </div>
+
+      <h2>4. <span>f</span>inman Web App</h2>
+      <div class="ecom">
+        <div>
+          <p>
+            This is an investing web app. <br />
+            anybody can invest at any different scheme <br />
+            user can also get help from advisor<br />
+            <br /><br /><br />
+
+            Technology I used to build this investing app - <br /><br />
+            1. for Frontend i used React Js <br /><br />
+          </p>
+        </div>
+        <div>
+          <img id="message" src="./images/screenshot/finman.png" alt="logo" />
+        </div>
+      </div>
+
+      <h2>5. <span>s</span>hadibiha Web App</h2>
+      <div class="message">
+        <div>
+          <img
+            id="message"
+            src="./images/screenshot/manage religion.png"
+            alt="logo"
+          />
+        </div>
+        <div>
+          <p>
+            This is an matrimonial website admin part. <br />
+            admin add all the required field <br />
+            users create their account based on <br />
+            the details which admin add here<br />
+            <br /><br /><br />
+
+            Technology I used to build this investing app - <br /><br />
+            1.Frontend i used React Js <br /><br />
+            1.Frontend Design i used Tailwind Css <br /><br />
+          </p>
+        </div>
+      </div>
     </div>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
